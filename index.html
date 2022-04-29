@@ -12,11 +12,17 @@
     <h1>Sketch Pad</h1>
     <div class="controls">
         <form>
-            <label for="checks">Squares Number</label>
+            <label for="checks">Choose a grid size</label>
             <input type="range" id="checks" name="checks" min="16" max="64" step="16" value="16">
             <output id="rangeOutput">16x16</output>
         </form>
         <button id="apply">Apply</button> 
+        <button id="clear">Clear</button>
+        <select name="colors" id="colors">
+            <option value="black">Black</option>
+            <option value="random-rgb">Random RGB</option>
+            <option value="shades">Shades of Gray</option>
+        </select>
     </div>
 
     <div class="container"></div>
